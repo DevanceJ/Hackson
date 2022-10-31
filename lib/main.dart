@@ -25,6 +25,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
       backgroundColor: (Colors.white),
       body: ListView(
@@ -86,8 +89,8 @@ class HomePage extends StatelessWidget {
                                 spreadRadius: 3,
                                 blurRadius: 11)
                           ]),
-                      width: 167,
-                      height: 167,
+                      width: (screenWidth / 2.46),
+                      height: (screenHeight / 5.34),
                       child: Column(
                         children: const [
                           Center(
@@ -139,8 +142,8 @@ class HomePage extends StatelessWidget {
                             //     spreadRadius: 3,
                             //     blurRadius: 11)
                           ]),
-                      width: 162,
-                      height: 207,
+                      width: (screenWidth / 2.54),
+                      height: (screenHeight / 4.3),
                       child: Column(
                         children: [
                           Center(
@@ -187,8 +190,8 @@ class HomePage extends StatelessWidget {
                             //     spreadRadius: 3,
                             //     blurRadius: 11)
                           ]),
-                      width: 162,
-                      height: 206,
+                      width: (screenWidth / 2.54),
+                      height: (screenHeight / 4.33),
                       child: Column(
                         children: [
                           Center(
@@ -228,14 +231,14 @@ class HomePage extends StatelessWidget {
                                 //     spreadRadius: 3,
                                 //     blurRadius: 11)
                               ]),
-                          width: 162,
-                          height: 101,
+                          width: (screenWidth / 2.54),
+                          height: (screenHeight / 8.83),
                           child: Row(
                             children: const [
                               Center(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      top: 35.5, bottom: 36, left: 17.67),
+                                      top: 30, bottom: 36, left: 17.67),
                                   child: Icon(
                                     Icons.supervisor_account,
                                     size: 39.33,
@@ -274,13 +277,13 @@ class HomePage extends StatelessWidget {
                                 //     spreadRadius: 3,
                                 //     blurRadius: 11)
                               ]),
-                          width: 162,
-                          height: 83,
+                          width: (screenWidth / 2.54),
+                          height: (screenHeight / 10.6),
                           child: Column(
                             children: [
                               Center(
                                 child: Padding(
-                                  padding: const EdgeInsets.only(top: 10),
+                                  padding: const EdgeInsets.only(top: 6),
                                   child: Image.asset('assets/pills.png'),
                                 ),
                               ),
@@ -305,7 +308,7 @@ class HomePage extends StatelessWidget {
           ),
           const SafeArea(
             child: Padding(
-              padding: EdgeInsets.only(top: 37.0, left: 24),
+              padding: EdgeInsets.only(top: 37.0, left: 24, bottom: 5),
               child: Text(
                 'How are you feeling today?',
                 style: TextStyle(fontSize: 16),
@@ -323,8 +326,8 @@ class HomePage extends StatelessWidget {
                       color: const Color(0xFFDCE7FD),
                       borderRadius: BorderRadius.circular(38),
                     ),
-                    width: 120,
-                    height: 50,
+                    width: (screenWidth / 3.43),
+                    height: (screenHeight / 17.84),
                     child: const Center(
                       child: Text(
                         '💪 On Top!',
@@ -342,8 +345,8 @@ class HomePage extends StatelessWidget {
                       color: const Color(0xFFDCE7FD),
                       borderRadius: BorderRadius.circular(38),
                     ),
-                    width: 167,
-                    height: 50,
+                    width: (screenWidth / 2.46),
+                    height: (screenHeight / 17.84),
                     child: const Center(
                       child: Text(
                         '📉 Low on Energy',
@@ -394,7 +397,7 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(34),
                           color: const Color(0xFFFEE0DF)),
                       width: double.infinity,
-                      height: 84,
+                      height: (screenHeight / 10.61),
                     ),
                   ),
                 ),
@@ -406,7 +409,7 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(34),
                           color: const Color(0xFFDCE7FD)),
                       width: double.infinity,
-                      height: 84,
+                      height: (screenHeight / 10.61),
                     ),
                   ),
                 ),
@@ -418,7 +421,7 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(34),
                           color: const Color(0xFFDCE7FD)),
                       width: double.infinity,
-                      height: 84,
+                      height: (screenHeight / 10.61),
                     ),
                   ),
                 ),
@@ -435,7 +438,7 @@ class HomePage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(34),
                       color: const Color(0xFF7A87FB)),
                   width: double.infinity,
-                  height: 190,
+                  height: (screenHeight / 4.69),
                   child: Row(
                     children: <Widget>[
                       const Padding(
@@ -449,7 +452,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(top: 25.39, left: 29),
+                        padding: const EdgeInsets.only(top: 25.39, left: 40),
                         child: Image.asset('assets/log.png'),
                       ),
                     ],
